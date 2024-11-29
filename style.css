@@ -1,0 +1,22 @@
+body {
+    background-color: blueviolet;
+    font-weight: 900;
+}
+
+h1 {
+    text-decoration: line-through;
+}
+
+p {
+    padding: 20px;
+}
+
+p.text {
+    font-style: inherit;
+    text-align: justify;
+}
+
+p.copy {
+    text-transform: capitalize;
+    text-align: right;
+}

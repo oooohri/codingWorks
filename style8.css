@@ -1,0 +1,37 @@
+.box {
+    width: 800px;
+    height: 500px;
+    margin: 10px;
+    border: 3px solid;
+}
+.box div {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.box div:nth-child(1) {
+    background: blue;
+}
+.box div:nth-child(2) {
+    background: gold;
+}
+.box div:nth-child(3) {
+    background: darkcyan;
+}
+.box div:nth-child(4) {
+    background: antiquewhite;
+}
+
+.box div:nth-of-type(1) {
+    background: blue;
+}
+.box div:nth-of-type(2) {
+    background: gold;
+}
+.box div:nth-of-type(3) {
+    background: darkcyan;
+}
+.box div:nth-of-type(4) {
+    background: antiquewhite;
+}

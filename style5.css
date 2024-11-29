@@ -1,0 +1,46 @@
+/* 1 */
+.parent {border: 3px solid salmon;}
+
+.top {background-color: burlywood;}
+
+.child {background-color: darkblue; float: left; width: 300px; }
+.child2 {background-color: blueviolet; float: right; width: 350px;} 
+
+.clear {background-color: darkgreen;
+    /* height: 30px;  */
+    /* clear: both; */
+}
+
+/* 2 */
+.parent2 {
+    border: 3px solid darkgoldenrod;
+    /* overflow: hidden; */
+    display: flow-root;
+}
+.ch {
+    width: 300px; border: 1px solid blueviolet; 
+    float: left;
+    /* margin: auto; */
+    /* display: inline; */
+}
+.ch2 {
+    float: right;
+}
+
+/* 3 */
+section {
+    border: 3px solid cadetblue;
+    /* width: 900px; */
+    /* overflow: hidden; */
+    text-align: center;
+}
+
+article {
+    background-color: gold;
+    border: 1px solid red;
+    /* float: left; */
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+    box-sizing: border-box;
+}
