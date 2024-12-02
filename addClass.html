@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google CDN -->
+</head>
+<style>
+    a {
+        text-decoration: none;
+        text-align: center;
+        background: #808080;
+        color: #fff;
+        border-radius: 5px;
+        display: inline-block;
+        width: 80px;
+    }
+    .box {
+        width: 240px; 
+        height: 150px;
+        background: blue;
+        color: white;
+        margin: 10px;
+        text-align: center;
+        line-height: 150px;
+    }
+    .box.active {
+        background: green;
+    }
+</style>
+<body>
+    <a href="#none" class="show">넣기</a>
+    <a href="#none" class="hide">빼기</a>
+    <a href="#none" class="toggle">토글</a>
+    <div class="box">box</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./js/slideUp.js"></script>
+</body>
+</html>
