@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google CDN -->
+</head>
+<style>
+    ul {
+        list-style: none;
+    }
+    li {display: block; width: 150px; text-align: center;}
+    li > a {color: #fff; background: #000; padding: 5px;}
+    a {text-decoration: none; display: block;}
+    /* 중요!! */
+    .sub-menus {display: none; border: 1px solid;}
+    .sub-menus a {color: #000; padding: 5px;}
+
+    .btn span {background: #808080; color: #fff; border-radius: 5px; display: inline-block; width: 100px; text-align: center; cursor: pointer;}
+    .btn span.active {background: #fff; color: #000; border: 1px solid #808080;}
+</style>
+<body>
+    <ul>
+        <li>
+            <a href="#none">Menu-1</a>
+            <div class="sub-menus">
+                <a href="#none">Sub-Menu-1</a>
+                <a href="#none">Sub-Menu-2</a>
+                <a href="#none">Sub-Menu-3</a>
+                <a href="#none">Sub-Menu-4</a>
+            </div>
+        </li>
+        <li>
+            <a href="#none">Menu-2</a>
+            <div class="sub-menus">
+                <a href="#none">Sub-Menu-1</a>
+                <a href="#none">Sub-Menu-2</a>
+                <a href="#none">Sub-Menu-3</a>
+                <a href="#none">Sub-Menu-4</a>
+            </div>
+        </li>
+    </ul>
+    <div class="btn">
+        <span class="active">공지사항</span>
+        <span>갤러리</span>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./js/children.js"></script> 
+</body>
+</html>
