@@ -1,0 +1,66 @@
+.items {
+    /* border: 1px solid; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.items .item {
+    border: 1px solid #eee;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    /* 호버 전, 이미지 가운데정렬 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* item들 사이 간격 */
+    margin: 20px;
+}
+.item .caption {
+    background: #000;
+    color: #fff;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-top: 60px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.caption:hover {
+    opacity: 0.8;
+}
+.caption a {
+    text-decoration: none;
+    color: #fff;
+    background: darkgoldenrod;
+    border-radius: 5px;
+    display: inline-block;
+    width: 130px;
+    height: 30px;
+    line-height: 28px;
+}
+.caption a:hover {
+    color: darkgoldenrod;
+    background: #fff;
+}
+.item:nth-of-type(2) .caption a {
+    color: #fff;
+    background: darkorchid;
+}
+.item:nth-of-type(2) .caption a:hover {
+    color: darkorchid;
+    background: #fff;
+}
+.item:nth-of-type(3) .caption a {
+    color: #fff;
+    background: darkred;
+}
+.item:nth-of-type(3) .caption a:hover {
+    color: darkred;
+    background: #fff;
+}
+
