@@ -1,5 +1,14 @@
-/* 1 */
-.parent {border: 3px solid salmon;}
+/* 1 - clear:both 쓰는 방식 */
+/* 
+float 속성을 추가했을 때 부모에게 overflow:hidden을 주거나,
+혹은 display:flow-root를 주거나, 자식에게 clear:both를 주면
+float속성이 넘쳐나게 되지 않고 부모가 높이값을 갖게 된다.
+*/
+.parent {
+    border: 3px solid salmon;
+    /* overflow: hidden; */
+    /* display: flow-root; */
+}
 
 .top {background-color: burlywood;}
 
@@ -7,38 +16,40 @@
 .child2 {background-color: blueviolet; float: right; width: 350px;} 
 
 .clear {background-color: darkgreen;
-    /* height: 30px;  */
     /* clear: both; */
 }
 
-/* 2 */
+/* 2 - overflow:hidden / flow-root 사용하는 방식 */
 .parent2 {
     border: 3px solid darkgoldenrod;
     /* overflow: hidden; */
-    display: flow-root;
+    /* display: flow-root; */
 }
 .ch {
-    width: 300px; border: 1px solid blueviolet; 
-    float: left;
-    /* margin: auto; */
-    /* display: inline; */
+    width: 300px; 
+    border: 1px solid blueviolet; 
+    /* float: left; */
+    
+    margin: auto;
+    /* display: inline-block; */
+    display: block;
 }
 .ch2 {
-    float: right;
+    /* float: right; */
 }
 
 /* 3 */
 section {
     border: 3px solid cadetblue;
-    /* width: 900px; */
-    /* overflow: hidden; */
+    width: 900px;
+    overflow: hidden;
     text-align: center;
 }
 
 article {
     background-color: gold;
     border: 1px solid red;
-    /* float: left; */
+    float: left;
     display: inline-block;
     width: 300px;
     height: 100px;
