@@ -1,0 +1,40 @@
+body { margin: 0; display: flex; justify-content: center; height: 100vh; align-items: center; } 
+a { text-decoration: none; color: #222; } 
+
+.gnb {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 500px;
+    background: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+    /* font-size: 0;  */
+    display: flex;
+    padding: 30px;
+}
+.gnb li {
+    text-align: center;
+    /* display: inline-block; */
+    /* font-size: initial;  */
+    /* width: 100px; */
+    /* float: left; */
+    flex: 1;
+}
+.gnb li a {
+    position: relative;
+}
+.gnb li a:before {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    content: "";
+    /* border: 1px solid blue; */
+    height: 2px;
+    background: blue;
+    width: 0;
+    transition: 0.3s;
+}
+.gnb li a:hover:before {
+    width: 100%;
+}
