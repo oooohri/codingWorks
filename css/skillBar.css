@@ -1,0 +1,45 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body { font-family: 'Raleway', sans-serif; line-height: 1.5em; margin: 0; background-color: #fff; } 
+
+.skill-progress {
+    background: lightgray;
+    width: 300px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.skill-progress h1 {
+    text-align: center;
+}
+
+.item p {
+    /* border: 1px solid red; */
+    margin: 10px 0 10px 0;
+    overflow: hidden;
+}
+.item p span:nth-child(1) {
+    float: left;
+}
+.item p span:nth-child(2) {
+    float: right;
+}
+.item .progress {
+    border: 2px solid skyblue;
+    height: 15px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.progress-bar {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, salmon, orange, gold);
+    animation: ani 0.5s;
+}
+
+@keyframes ani {
+    0% {width: 0;}
+}
