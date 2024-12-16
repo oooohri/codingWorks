@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: linear-gradient(230deg, yellow, green);
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.gnb {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.646);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.gnb a {
+    /* border: 1px solid red; */
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    position: relative;
+    overflow: hidden;
+}
+.gnb a:before, .gnb a:after {
+    position: absolute;
+    content: attr(data-link);
+    width: 100%;
+    transition: 0.3s;
+}
+.gnb a:before {
+    top: 0;
+    left: 0;
+}
+.gnb a:after {
+    top: 100%;
+    left: 0;
+    color: green;
+}
+.gnb a:hover:before {
+    top: -100%;
+}
+.gnb a:hover::after {
+    top: 0;
+}
