@@ -1,0 +1,59 @@
+.body { margin: 0; position: relative; }
+/* .container {} */
+input[id=trigger] {
+    display: none;
+}
+label[for=trigger] {
+    /* border: 1px solid red; */
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    /* left: 50%;
+    transform: translate(-50%, -50%); */
+    right: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+label[for=trigger] span {
+    border: 1px solid #000;
+    position: absolute;
+    width: 100%;
+    transition: 0.5s;
+}
+label[for=trigger] span:nth-of-type(1) {
+    top: 0;
+}
+label[for=trigger] span:nth-of-type(2) {
+    top: 50%;
+}
+label[for=trigger] span:nth-of-type(3) {
+    top: 100%;
+}
+
+input[id=trigger]:checked + label[for=trigger] span:nth-of-type(1) {
+    top: 50%;
+    transform: rotate(45deg);
+}
+input[id=trigger]:checked + label[for=trigger] span:nth-of-type(2) {
+    opacity: 0;
+}
+input[id=trigger]:checked + label[for=trigger] span:nth-of-type(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+}
+/* 사이드 바 */
+.sidebar {
+    transition: 0.5s;
+}
+input[id=trigger]:checked ~ .sidebar {
+    position: absolute;
+    width: 500px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #000;
+}
+input[id=trigger]:checked + label[for=trigger] {
+    right: 530px;
+}
