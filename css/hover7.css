@@ -1,0 +1,149 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #222;
+    line-height: 1.5em;
+    font-weight: 300;
+    margin: 0;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(4, 36, 94, 0.695);
+}
+a {
+    color: #222;
+    text-decoration: none;
+}
+.gnb a {
+    position: relative;
+    padding-bottom: 5px;
+}
+.gnb a::after {
+    position: absolute;
+    content: "";
+    background-color: crimson;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+.gnb a:hover:after {
+    width: 100%;
+}
+
+.gnb2 a {
+    position: relative;
+    padding-bottom: 5px;
+}
+.gnb2 a::after {
+    position: absolute;
+    content: "";
+    background-color: crimson;
+    width: 2px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+.gnb2 a:hover:after {
+    left: 100%;
+}
+
+.gnb3 a {
+    position: relative;
+    padding-bottom: 5px;
+}
+.gnb3 a::after {
+    position: absolute;
+    content: "";
+    background-color: crimson;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    transition: 0.3s;
+    left: 50%;
+    /* 가운데로 옮겨주는 코드 */
+    transform: translateX(-50%); 
+}
+.gnb3 a:hover:after {
+    width: 0%;
+}
+
+.gnb4 a {
+    position: relative;
+    border: 1px solid green;
+    display: inline-block;
+    width: 300px;
+    height: 40px;
+    overflow: hidden;
+}
+.gnb4 a::before, .gnb4 a:after {
+    content: attr(data-text);
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.gnb4 a:before {
+    background: gray;
+    top: 0;
+}
+.gnb4 a::after {
+    background: gold;
+    top: 100%;
+}
+.gnb4 a:hover::before {
+    top: -100%;
+}
+.gnb4 a:hover::after {
+    top: 0;
+}
+
+.gnb5 a {
+    position: relative;
+    display: block;
+    width: 450px;
+    /* height: 150px; */
+    padding: 15px;
+    /* border: 1px solid red; */
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    /* border-box는 패딩,보더값을 모두 width로 포함하는데, 만약
+        적용 안하면 자식에게 width값만 상속되어 크기가 맞지 않는다. */
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.gnb5 a:before, .gnb5 a:after {
+    position: absolute;
+    content: "";
+    width: inherit;
+    /* 부모에 height 적용하지 않더라도 padding을 포함한 부모크기만큼 자식요소가 상속받는다. */
+    height: 100%;
+    /* 얘는 내용이 비었으므로 불가능하다! line-height 적용이 불가능! */
+    /* height: inherit; */
+    /* line-height: 150px; */
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #7e7e7e;
+    transition: 0.3s;
+}
+.gnb5 a:hover {
+    letter-spacing: 6px;
+}
+.gnb5 a:hover:before {
+    transform: rotate(45deg);
+}
+.gnb5 a:hover:after {
+    transform: rotate(-45deg);
+}
